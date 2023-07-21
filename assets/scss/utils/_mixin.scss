@@ -1,0 +1,10 @@
+@mixin img-hide-text{
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin img-hover-zoom-in{
+    transition: all 0.5s ease-out;
+    transform:scale(1.1,1.1);
+}

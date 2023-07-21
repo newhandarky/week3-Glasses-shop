@@ -1,0 +1,29 @@
+.block-1 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &--article {
+        text-align: end;
+        height: 787px;
+    }
+
+    &--text {
+        font-size: 2.25rem;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    &--link {
+        font-size: 1.25rem;
+
+        &:hover {
+            color: $main-color;
+            background: $light-color;
+        }
+    }
+}

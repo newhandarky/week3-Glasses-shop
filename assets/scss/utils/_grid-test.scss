@@ -1,0 +1,92 @@
+$gutter-width: 30px;
+$grid-num:12;
+
+*{
+    // 為了讓gutter可以設置絕對數值
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.container{
+    margin: 0 auto;
+    padding-right: ($gutter-width/2);
+    padding-left: ($gutter-width/2);
+}
+
+.row{
+    display: flex;
+    margin-left: -($gutter-width/2);
+    margin-right: -($gutter-width/2);
+    flex-wrap: wrap;
+}
+
+%col{
+    // 增加穩定性
+    position: relative;
+    min-height: 1px;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: ($gutter-width/2);
+    padding-right: ($gutter-width/2);
+}
+
+@for $i from 1 through $grid-num{
+    .col-#{$i}{
+        max-width: (($i / $grid-num) * 100%);
+        flex: 0 0 (($i / $grid-num) * 100%);
+        @extend %col;
+    }
+}
+
+
+@media (max-width: 2560px){
+    @for $i from 1 through $grid-num{
+        .col-xl-#{$i}{
+            max-width: (($i / $grid-num) * 100%);
+            flex: 0 0 (($i / $grid-num) * 100%);
+        }
+    }
+    .container{
+        max-width: 1728px;
+    }
+}
+
+@media (max-width: 1920px){
+    @for $i from 1 through $grid-num{
+        .col-lg-#{$i}{
+            max-width: (($i / $grid-num) * 100%);
+            flex: 0 0 (($i / $grid-num) * 100%);
+        }
+    }
+    .container{
+        max-width: 1296px;
+    }
+}
+
+@media (max-width: 960px){
+    @for $i from 1 through $grid-num{
+        .col-md-#{$i}{
+            max-width: (($i / $grid-num) * 100%);
+            flex: 0 0 (($i / $grid-num) * 100%);
+        }
+    }
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 376px){
+    @for $i from 1 through $grid-num{
+        .col-sm-#{$i}{
+            max-width: (($i / $grid-num) * 100%);
+            flex: 0 0 (($i / $grid-num) * 100%);
+        }
+    }
+    .container{
+        max-width: 360px;
+    }
+}

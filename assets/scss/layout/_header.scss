@@ -1,0 +1,20 @@
+.header {
+    padding: 0.75rem 0;
+
+    &--logo {
+        @include img-hide-text;
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+        width: 80px;
+        height: 49px;
+        background-size: cover;
+    }
+
+    &--nav {
+        justify-content: end;
+
+        a {
+            margin-left: 4rem;
+            font-size: 1.25rem;
+        }
+    }
+}

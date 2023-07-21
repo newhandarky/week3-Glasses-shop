@@ -1,0 +1,14 @@
+// base
+@import "./base/reset";
+@import "./base/variable";
+// utils
+@import "./utils/generic";
+@import "./utils/grid-test";
+@import "./utils/mixin";
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+// pages
+@import "./pages/index";
+
+
