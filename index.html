@@ -7,8 +7,8 @@
     <title>Week3 Homework</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
-  <script type="module" crossorigin src="/week3-Glasses-shop/assets/index-30648032.js"></script>
-  <link rel="stylesheet" href="/week3-Glasses-shop/assets/index-18ffb701.css">
+  <script type="module" crossorigin src="/week3-Glasses-shop/assets/index-9d583689.js"></script>
+  <link rel="stylesheet" href="/week3-Glasses-shop/assets/index-b63b7851.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="main__article row d-flex fd-column jc-center">
                     <p class="main__text font-color">Promise-Desert 2020 早春系列</p>
-                    <h1 class="font-color title">看得清，才能看得遠</h1>
+                    <h1 class="font-color h2-title">看得清，才能看得遠</h1>
                     <div class="">
                         <a class="main__btn light-color btn bg-main" href="">立即購買</a>
                     </div>
@@ -165,24 +165,85 @@
                         <p class="connection__text mb-24">我們相當重視您的意見，若您有任何疑問，可先參考<a class="connection__link dark-color"
                                 href="">「常見問題」</a>
                             ，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-                        <form class="row" action="" method="post">
-                            <p></p>
-                            <input class="col-12" type="text">
-                            <p></p>
-                            <input class="col-12" type="text">
-                            <p></p>
-                            <input class="col-12" type="text">
-                            <p></p>
-                            <input class="col-12" type="textarea">
-
+                            
+                        <form action="" method="post">
+                            <label for="name">姓名</label>
+                            <input class="connection__input p-6-12 bg-light mb-8-mb-16" placeholder="陳小明" name="name" type="text">
+                            <label for="tel">連絡電話</label>
+                            <input class="connection__input p-6-12 bg-light mb-8-mb-16" placeholder="0912-345-678" name="tel" type="text">
+                            <label for="mail">電子郵件</label>
+                            <input class="connection__input p-6-12 bg-light mb-8-mb-16" placeholder="example@email.com" name="mail" type="text">
+                            <label for="feedback">意見反饋</label>
+                            <textarea class="connection__input connection__textarea p-6-12 bg-light mb-8-mb-16" placeholder="請輸入您的意見" name="feedback" cols="30" rows="8"></textarea>
+                            <input id="check" class="connection__checkbox" type="checkbox">
+                            <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                            <div class="row">
+                                <div class="col-8 m0-a">
+                                    <input class="btn connection__input bg-main white mt-48 connection__submit" type="submit" value="確認送出">
+                                </div>
+                            </div>
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
 
         
+
+        <div class="footer bg-main pb-32">
+    <div class="container mt-60">
+        <div class=" d-flex jc-between">
+            <nav>
+                <ul class="d-flex">
+                    <li><a class="white mr-48 footer__nav__link" href="">首頁</a></li>
+                    <li><a class="white mr-48 footer__nav__link" href="">系列鏡框</a></li>
+                    <li><a class="white mr-48 footer__nav__link" href="">門市據點</a></li>
+                    <li><a class="white mr-48 footer__nav__link" href="">部落格</a></li>
+                    <li><a class="white mr-48 footer__nav__link" href="">部落格</a></li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <a class="footer__sns__link" href="">
+                    <img class="footer__logo"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                        alt="facebook-LOGO">
+                </a>
+                <a class="footer__sns__link" href="">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                        alt="instagram-LOGO">
+                </a>
+                <a class="footer__sns__link" href="">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                        alt="line-LOGO">
+                </a>
+            </div>
+        </div>
+        <div class="contact">
+            <p class="footer__text white mb-8">
+                <span class="footer__icon material-symbols-outlined mr-20
+                mr-20 pt-8">call</span>
+                0800-000-000
+            </p>
+            <p class="footer__text white">
+                <span class="footer__icon material-symbols-outlined mr-20
+                mr-20 pt-8">mail</span>
+                glasses@business.com
+            </p>
+            <hr>
+        </div>
+        <div class="coperight d-flex jc-between pt-32-pb-32">
+            <p class="white">Copyright © 2020 Glasses.All rights reserved.</p>
+            <nav>
+                <ul class="d-flex">
+                    <li><a class="white" href="">隱私權政策</a></li>
+                    <li><a class="white ml-48" href="">服務條款</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
             
 </body>
 
