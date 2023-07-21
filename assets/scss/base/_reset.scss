@@ -45,7 +45,7 @@ table {
 }
 
 // 共通設定
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
 	font-size: 1rem;
@@ -55,4 +55,8 @@ body {
 
 img{
 	vertical-align: bottom;
+}
+
+a{
+	text-decoration: none;
 }

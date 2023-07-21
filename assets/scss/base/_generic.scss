@@ -1,0 +1,134 @@
+// 格式
+.fd-column{
+    flex-direction: column;
+}
+.d-flex {
+    display: flex;
+}
+
+// 對齊
+.jc-center{
+    justify-content: center;
+}
+.jc-end{
+    justify-content: end;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.jc-around{
+    justify-content: space-around;
+}
+.ai-center{
+    align-items: center;
+}
+.ta-center{
+    text-align: center;
+}
+.ta-start{
+    text-align: start;
+}
+
+// 樣式
+.btn{
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+
+// 字體
+.h2-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.h3-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.date-font {
+    font-size: 0.875rem;
+}
+.italic{
+    font-style: italic;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// 顏色
+.dark-color {
+    color: $dark-color;
+}
+
+.light-color {
+    color: $light-color;
+}
+.white{
+    color: $white;
+}
+.gray{
+    color: $gray;
+}
+.main-color {
+    color: $main-color;
+}
+.font-color{
+    color: $font-color;
+}
+.bg-dark{
+    background: $dark-color;
+}
+.bg-main{
+    background: $main-color;
+}
+.bg-light{
+    background: $light-color;
+}.bg-white{
+    background: white;
+}
+
+// 間距
+.block-padding{
+    padding: 5rem 0;
+}
+.p-16{
+    padding: 1rem;
+}
+.pt-8_pb-8{
+    padding: 0.5rem 0;
+}
+// top
+.mt-24{
+    margin-top: 3rem;
+}
+
+// right
+
+
+// left
+.ml-64{
+    margin-left: 4rem;
+}
+
+
+// bottom
+.mb-8{
+    margin-bottom: 0.5rem;
+}
+.mb-16{
+    margin-bottom: 1rem;
+}
+.mb-24{
+    margin-bottom: 1.5rem;
+}
+.mb-40{
+    margin-bottom: 2.5rem;
+}
+.mb-48{
+    margin-bottom: 3rem;
+}
+.mb-72{
+    margin-bottom: 4.5rem;
+}
+
