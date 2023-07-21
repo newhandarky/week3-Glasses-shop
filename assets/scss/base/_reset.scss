@@ -47,6 +47,11 @@ table {
 // 共通設定
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+/* 全域 border box */
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
 body {
 	font-size: 1rem;
 	line-height: 1.5;
@@ -55,8 +60,12 @@ body {
 
 img{
 	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
 }
 
 a{
 	text-decoration: none;
 }
+
+

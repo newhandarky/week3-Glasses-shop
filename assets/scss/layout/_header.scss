@@ -14,5 +14,8 @@
     }
     &__link {
         font-size: 1.25rem;
+        &:hover{
+            @include link-hover-padding;
+        }
     }
 }

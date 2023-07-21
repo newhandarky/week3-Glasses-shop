@@ -1,0 +1,25 @@
+.footer{
+    &__logo{
+        width: 48px;
+        height: 48px;
+    }
+    &__nav__link:hover{
+        @include link-hover-padding;
+    }
+    &__sns__link:hover{
+        .footer__logo{
+            @include img-hover-zoom-in;
+        }
+    }
+    &__text{
+        font-size: 2.25rem;
+    }
+    &__icon{
+        font-size: 2.5rem;
+        display: inline-block;
+    }
+    hr{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
