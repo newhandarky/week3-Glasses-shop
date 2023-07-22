@@ -67,7 +67,7 @@ body{
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 768px){
     @for $i from 1 through $grid-num{
         .col-md-#{$i}{
             max-width: (($i / $grid-num) * 100%);
@@ -75,11 +75,11 @@ body{
         }
     }
     .container{
-        max-width: 768px;
+        max-width: 720px;
     }
 }
 
-@media (max-width: 376px){
+@media (max-width: 375px){
     @for $i from 1 through $grid-num{
         .col-sm-#{$i}{
             max-width: (($i / $grid-num) * 100%);
@@ -87,6 +87,6 @@ body{
         }
     }
     .container{
-        max-width: 360px;
+        max-width: 345px;
     }
 }
