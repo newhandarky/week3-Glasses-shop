@@ -13,6 +13,11 @@
     }
     &__text{
         font-size: 2.25rem;
+        display: block;
+        &:hover{
+            background: $white;
+            color: $main-color;
+        }
     }
     &__icon{
         font-size: 2.5rem;
