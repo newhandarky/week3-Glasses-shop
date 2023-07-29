@@ -38,6 +38,7 @@
     }
 }
 
+// rwd 576
 @media (max-width: 576px){
     .header{
         &__item{
@@ -58,6 +59,7 @@
     }
 }
 
+// rwd 375
 @media (max-width: 375px){
     .header{
         padding-bottom: 0;

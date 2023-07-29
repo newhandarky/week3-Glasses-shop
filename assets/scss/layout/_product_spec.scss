@@ -1,0 +1,60 @@
+.product__spec{
+    &__nav{
+        max-width: 100%;
+        li{
+            width: 33.333%;
+            position: relative;
+        }
+    }
+    &__link{
+        display: block;
+        border: 1px solid #DCDCDC;
+        width: 100%;
+        padding: 1.5rem 0;        
+        &:hover{
+            color: $white;
+            background: lighten($main-color, 40%);
+        }
+    }
+
+    .active{
+        position: absolute;
+        display: none;
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        background: $main-color;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+// rwd 768
+@media (max-width: 768px){
+    .product__spec{
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+// rwd 696
+@media (max-width: 696px){
+    .product__spec{
+        &__link{
+            font-size: 1.5rem;
+        }
+    }
+    .product__spec__link{
+        font-weight: 500;
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .product__spec{
+        &__link{
+            font-size: 1rem;
+        }
+    }
+}
+

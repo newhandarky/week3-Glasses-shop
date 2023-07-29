@@ -1,0 +1,45 @@
+.pagination{
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 48px;
+        border: 1px solid #555555;
+        font-size: 18px;
+        &:hover{
+            background: $main-color;
+            color: $white;
+        }
+        &--active{
+            background: $dark-color;
+            color: $white;
+            &:hover{
+                background: $dark-color;
+                color: $white;
+                cursor: default;
+            }
+        }
+    }
+    &__link__upDown{
+        width: 81px;
+        height: 48px;
+        font-size: 19px;
+    }
+    &__link__down{
+        background: #F2F2F2;
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .pagination__link{
+        font-size: 1rem;
+        width: 40px;
+        height: 45px;
+        &__upDown{
+            width: 75px;
+            height: 45px;
+        }
+    }
+}
