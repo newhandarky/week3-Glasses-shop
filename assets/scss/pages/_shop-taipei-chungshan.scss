@@ -1,10 +1,88 @@
 // rwd 768
 @media (max-width: 768px){
-    .shop__info--rwd {
-        padding: 0 0.75rem;
-        margin-bottom: 1.5rem;
-        max-height: 100%;
-        width: auto;
+    .shop__info{
+        &--rwd {
+            margin-bottom: 1.5rem;
+            width: 50%;
+            img{
+                display: none;
+            }
+        }
+        &__photo{
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true");
+            @include bg-img-cover;
+            padding-right: 12px;
+            margin-right: 12px;
+        }
+        &__text{
+            margin-left: 12px;
+        }
+        &__card{
+            display: flex;            
+        }
+        &__local__map{
+            height: 414px;
+        }
     }
+}
 
+
+// rwd 696
+@media (max-width: 696px){
+    .shop__info{
+        &__text{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+            }            
+        }
+        &__local__map{
+            height: 350px;
+        }
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .shop__info{
+        &__card{
+            display: block;            
+        }
+        &--rwd {
+            margin-bottom: 1.5rem;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            img{
+                display: block;
+            }
+        }
+        &__text{
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 20px;
+            }            
+        }
+        &__local__map{
+            height: 300px;
+        }
+    }
+}
+
+// rwd 480
+@media (max-width: 480px){
+    .shop__info__local__map{
+        height: 250px;        
+    }
+}
+
+// rwd 375
+@media (max-width: 375px){
+    .shop__info__local__map{
+        height: 208px;        
+    }
 }
