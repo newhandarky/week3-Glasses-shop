@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3 眼鏡官網-Shop</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,-25" />
+  <script type="module" crossorigin src="/week3-Glasses-shop/assets/all-0f567561.js"></script>
+  <link rel="stylesheet" href="/week3-Glasses-shop/assets/all-171d41f8.css">
+</head>
+
+<body>
+    <div class="header bg-main">
+    <div class="header__item container d-flex jc-between">
+        <a class="header__logo" href="index.html">首頁連結</a>
+        <nav class="d-flex">
+            <ul class="header__nav d-flex ai-center">
+                <li class="header__nav__li"><a class="header__link light-color" href="product.html">系列鏡框</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="shop.html">門市據點</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="#">部落格</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="#">常見問題</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="">
+        <ul class="header__nav__sm--on">
+            <li class="header__nav__li"><a class="header__link light-color" href="product.html">系列鏡框</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="shop.html">門市據點</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="#">部落格</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="#">常見問題</a></li>
+        </ul>
+    </nav>
+</div>
+        <div class="shop block-padding">
+            <div class="container">
+
+            <div class="pages__title mt-16 mb-32">
+    <div class="pages__title__border"></div>
+    <h1 class="pages__h1 font-xxl mb-32 pl-16"></h1>
+</div>
+
+<script>
+    
+    window.onload = function () {
+        let str = location.pathname;
+        let pages = ["shop", "faq", "blog"];
+        let pagesZh = ["門市據點", "常見問題", "部落格"];
+        let h1Str = "";
+        
+        pages.forEach(function(page, index){
+            if(str.indexOf(page) != -1)
+            h1Str = pagesZh[index];
+        })
+        
+        document.querySelector(".pages__h1").innerHTML = h1Str;
+    }
+
+</script>
+                <div class="mb-40">
+                    <div>
+                        <label class="shop__label d-flex font-lg font-normal" for="shops">選擇地區
+                            <select class="shop__select ml-16" name="shops" id="shops">
+                                <option value="taipei">台北市</option>
+                                <option value="taichung">台中市</option>
+                                <option value="kaohsiung">高雄市</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <ul class="shop__card row">
+                    <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                            alt="門市照片-中山旗艦店">
+                        <div class="shop__card__item--border shop__card__item__title">
+                            <h2 class="font-lg font-normal">台北中山旗艦店</h2>
+                        </div>
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    call</span>電話：(02)000-1234</p>
+                            <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
+                                    schedule</span>營業時間：10:00-21:00</p>
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+                        </div>
+                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                    </li>
+                    <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true"
+                            alt="門市照片-台北緣園店">
+                        <div class="shop__card__item--border shop__card__item__title">
+                            <h2 class="font-lg font-normal">台北綠園店</h2>
+                        </div>
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    call</span>電話：(02)000-2345</p>
+                            <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
+                                    schedule</span>營業時間：10:00-21:00</p>
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    location_on</span>地址：台北市中正區復興南路 132-1 號</p>
+                        </div>
+                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                    </li>
+                    <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true"
+                            alt="門市照片-台中清水旗艦店">
+                        <div class="shop__card__item--border shop__card__item__title">
+                            <h2 class="font-lg font-normal">台中清水旗艦店</h2>
+                        </div>
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    call</span>電話：(02)000-1234</p>
+                            <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
+                                    schedule</span>營業時間：10:00-21:00</p>
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    location_on</span>地址：台中市清水區經南一路 23 號 8 樓</p>
+                        </div>
+                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                    </li>
+                    <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true"
+                            alt="門市照片-高雄中正形象店">
+                        <div class="shop__card__item--border shop__card__item__title">
+                            <h2 class="font-lg font-normal">高雄中正形象店</h2>
+                        </div>
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    call</span>電話：(07)000-2345</p>
+                            <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
+                                    schedule</span>營業時間：10:00-21:00</p>
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+                        </div>
+                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                    </li>
+                    <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true"
+                            alt="門市照片-高雄夢時代店">
+                        <div class="shop__card__item--border shop__card__item__title">
+                            <h2 class="font-lg font-normal">高雄夢時代店</h2>
+                        </div>
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    call</span>電話：(07)000-1234</p>
+                            <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
+                                    schedule</span>營業時間：10:00-21:00</p>
+                            <p class="d-flex "><span class="material-symbols-outlined mr-12">
+                                    location_on</span>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+                        </div>
+                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer bg-main pb-32">
+    <div class="container">
+        <div class="d-flex jc-between">
+            <div>
+                <nav class="footer__nav mb-40">
+                    <ul class="d-flex">
+                        <li><a class="white mr-48 footer__nav__link" href="index.html">首頁</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="product.html">系列鏡框</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="shop.html">門市據點</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="">部落格</a></li>
+                        <li><a class="white footer__nav__link" href="">常見問題</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <a class="footer__text white mb-8" href="tel:+">
+                        <span class="footer__icon material-symbols-outlined mr-20
+                            mr-20 pt-8">call</span>
+                        0800-000-000
+                    </a>
+                    <a class="footer__text white" href="mailto:">
+                        <span class="footer__icon material-symbols-outlined mr-20
+                            mr-20 pt-8">mail</span>
+                        glasses@business.com
+                    </a>
+                </div>
+            </div>
+            <div class="footer__sns">
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                        alt="facebook-LOGO">
+                </a>
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                        alt="instagram-LOGO">
+                </a>
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                        alt="line-LOGO">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__copyright d-flex jc-between pt-32-pb-32">
+            <p class="white">Copyright © 2020 Glasses.All rights reserved.</p>
+            <nav>
+                <ul class="footer__copyright__nav d-flex">
+                    <li class="footer__copyright__li"><a class="footer__copyright__link white" href="">隱私權政策</a></li>
+                    <li class="footer__copyright__li"><a class="footer__copyright__link white ml-48" href="">服務條款</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>            
+</body>
+
+</html>
