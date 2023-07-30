@@ -24,7 +24,7 @@
 <script>
     window.onload = function(){
         let str = location.pathname.split("/");
-        let newStr = str[3].split('.');
+        let newStr = str[str.length - 1].split('.');
         
         if(newStr[0] === "product"){
             newStr[0] = "optical";
