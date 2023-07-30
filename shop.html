@@ -7,8 +7,8 @@
     <title>Week3 眼鏡官網-Shop</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,-25" />
-  <script type="module" crossorigin src="/week3-Glasses-shop/assets/all-0f567561.js"></script>
-  <link rel="stylesheet" href="/week3-Glasses-shop/assets/all-171d41f8.css">
+  <script type="module" crossorigin src="/week3-Glasses-shop/assets/all-00588c3e.js"></script>
+  <link rel="stylesheet" href="/week3-Glasses-shop/assets/all-abaf8f7c.css">
 </head>
 
 <body>
@@ -47,14 +47,11 @@
         let str = location.pathname;
         let pages = ["shop", "faq", "blog"];
         let pagesZh = ["門市據點", "常見問題", "部落格"];
-        let h1Str = "";
         
         pages.forEach(function(page, index){
             if(str.indexOf(page) != -1)
-            h1Str = pagesZh[index];
+            document.querySelector(".pages__h1").innerHTML = pagesZh[index];
         })
-        
-        document.querySelector(".pages__h1").innerHTML = h1Str;
     }
 
 </script>
@@ -77,7 +74,7 @@
                         <div class="shop__card__item--border shop__card__item__title">
                             <h2 class="font-lg font-normal">台北中山旗艦店</h2>
                         </div>
-                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column">
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     call</span>電話：(02)000-1234</p>
                             <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
@@ -85,7 +82,7 @@
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
                         </div>
-                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                        <a class="shop__card__link bg-dark white ta-center" href="shop-taipei-chungshan.html">詳細資訊</a>
                     </li>
                     <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true"
@@ -93,7 +90,7 @@
                         <div class="shop__card__item--border shop__card__item__title">
                             <h2 class="font-lg font-normal">台北綠園店</h2>
                         </div>
-                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column">
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     call</span>電話：(02)000-2345</p>
                             <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
@@ -101,7 +98,7 @@
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     location_on</span>地址：台北市中正區復興南路 132-1 號</p>
                         </div>
-                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                        <a class="shop__card__link bg-dark white ta-center" href="#">詳細資訊</a>
                     </li>
                     <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true"
@@ -109,7 +106,7 @@
                         <div class="shop__card__item--border shop__card__item__title">
                             <h2 class="font-lg font-normal">台中清水旗艦店</h2>
                         </div>
-                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column">
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     call</span>電話：(02)000-1234</p>
                             <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
@@ -117,7 +114,7 @@
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     location_on</span>地址：台中市清水區經南一路 23 號 8 樓</p>
                         </div>
-                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                        <a class="shop__card__link bg-dark white ta-center" href="#">詳細資訊</a>
                     </li>
                     <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true"
@@ -125,7 +122,7 @@
                         <div class="shop__card__item--border shop__card__item__title">
                             <h2 class="font-lg font-normal">高雄中正形象店</h2>
                         </div>
-                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column">
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     call</span>電話：(07)000-2345</p>
                             <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
@@ -133,7 +130,7 @@
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
                         </div>
-                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                        <a class="shop__card__link bg-dark white ta-center" href="#">詳細資訊</a>
                     </li>
                     <li class="shop__card__item col-4 col-md-6 col-sm-12 mb-48">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true"
@@ -141,7 +138,7 @@
                         <div class="shop__card__item--border shop__card__item__title">
                             <h2 class="font-lg font-normal">高雄夢時代店</h2>
                         </div>
-                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column jcc    ">
+                        <div class="shop__card__item--border shop__card__item__text d-flex fd-column">
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     call</span>電話：(07)000-1234</p>
                             <p class="d-flex margin-upDown"><span class="material-symbols-outlined mr-12">
@@ -149,7 +146,7 @@
                             <p class="d-flex "><span class="material-symbols-outlined mr-12">
                                     location_on</span>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
                         </div>
-                        <a class="shop__card__link bg-dark white ta-center" href="">詳細資訊</a>
+                        <a class="shop__card__link bg-dark white ta-center" href="#">詳細資訊</a>
                     </li>
                 </ul>
 
