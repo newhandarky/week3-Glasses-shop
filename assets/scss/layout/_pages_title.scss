@@ -1,0 +1,30 @@
+.pages__title{
+    position: relative;
+    &__border{
+        position: absolute;
+        width: 8px;
+        height: 72px;
+        left: -4px;
+        background: $main-color;
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .pages__h1{
+        font-size: 2rem;
+    }
+    .pages__title__border{
+        height: 48px;
+    }
+}
+
+// rwd 375px
+@media (max-width: 375px){
+    .pages__h1{
+        font-size: 1.5rem;
+    }
+    .pages__title__border{
+        height: 36px;
+    }
+}

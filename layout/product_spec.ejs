@@ -2,12 +2,12 @@
     <nav>
         <ul class="product__spec__nav d-flex jc-around font-xl ta-center">
             <li>
-                <a class="product__spec__link roboto dark-color" href="#">OPTICAL
+                <a class="product__spec__link roboto dark-color" href="product.html">OPTICAL
                 </a>
                 <span class="optical"></span>
             </li>
             <li>
-                <a class="product__spec__link roboto dark-color" href="#">SUNGLASSES
+                <a class="product__spec__link roboto dark-color" href="sunglasses.html">SUNGLASSES
                 </a>
                 <span class="sunglasses"></span>
             </li>
@@ -19,3 +19,17 @@
         </ul>
     </nav>
 </div>
+
+
+<script>
+    window.onload = function(){
+        let str = location.pathname.split("/");
+        let newStr = str[3].split('.');
+        
+        if(newStr[0] === "product"){
+            newStr[0] = "optical";
+        }
+
+        document.querySelector(`.${newStr[0]}`).classList.add("active");
+    }
+</script>

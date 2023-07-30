@@ -1,0 +1,22 @@
+<div class="pages__title mt-16 mb-32">
+    <div class="pages__title__border"></div>
+    <h1 class="pages__h1 font-xxl mb-32 pl-16"></h1>
+</div>
+
+<script>
+    
+    window.onload = function () {
+        let str = location.pathname;
+        let pages = ["shop", "faq", "blog"];
+        let pagesZh = ["門市據點", "常見問題", "部落格"];
+        let h1Str = "";
+        
+        pages.forEach(function(page, index){
+            if(str.indexOf(page) != -1)
+            h1Str = pagesZh[index];
+        })
+        
+        document.querySelector(".pages__h1").innerHTML = h1Str;
+    }
+
+</script>

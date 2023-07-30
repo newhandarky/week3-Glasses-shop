@@ -2,16 +2,21 @@
 @import "./base/reset";
 @import "./base/variable";
 @import "./base/generic";
+
 // utils
 @import "./utils/grid-test";
 @import "./utils/mixin";
+
 // layout
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/product_spec";
 @import "./layout/pagination";
+@import "./layout/pages_title";
+
 // pages
 @import "./pages/index";
 @import "./pages/product";
-
+@import "./pages/sunglasses";
+@import "./pages/shop";
 
