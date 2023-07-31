@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3 眼鏡官網-部落格頁面</title>
+  <script type="module" crossorigin src="/week3-Glasses-shop/assets/all-f15d3a7d.js"></script>
+  <link rel="stylesheet" href="/week3-Glasses-shop/assets/all-985adb3c.css">
+</head>
+
+<body>
+    <div class="header bg-main">
+    <div class="header__item container d-flex jc-between">
+        <a class="header__logo" href="index.html">首頁連結</a>
+        <nav class="d-flex">
+            <ul class="header__nav d-flex ai-center">
+                <li class="header__nav__li"><a class="header__link light-color" href="product.html">系列鏡框</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="shop.html">門市據點</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="blog.html">部落格</a></li>
+                <li class="header__nav__li ml-64"><a class="header__link light-color" href="faq.html">常見問題</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="">
+        <ul class="header__nav__sm--on">
+            <li class="header__nav__li"><a class="header__link light-color" href="product.html">系列鏡框</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="shop.html">門市據點</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="blog.html">部落格</a></li>
+            <li class="header__nav__li"><a class="header__link light-color" href="faq.html">常見問題</a></li>
+        </ul>
+    </nav>
+</div>
+        <div class="blog block-padding">
+            <div class="container">
+
+                <div class="pages__title mt-16 mb-32">
+    <div class="pages__title__border"></div>
+    <h1 class="pages__h1 font-xxl mb-32 pl-16"></h1>
+</div>
+
+<script>
+    
+    window.onload = function () {
+        let str = location.pathname;
+        let pages = ["shop", "faq", "blog"];
+        let pagesZh = ["門市據點", "常見問題", "部落格"];
+        
+        pages.forEach(function(page, index){
+            if(str.indexOf(page) != -1)
+            document.querySelector(".pages__h1").innerHTML = pagesZh[index];
+        })
+    }
+
+</script>
+                    <ul class="blog__card">
+                        <li class="blog__card__item row mb-60">
+                            <div class="blog__card__photo col-6 col-sm-12"><img
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true"
+                                    alt="部落格封面照片1-情人特別企劃"></div>
+                            <div class="blog__article col-6 col-sm-12 d-flex fd-column jc-between">
+                                <div>
+                                    <a href="">
+                                        <h2 class="font-color font-xl">情人特別企劃</h2>
+                                    </a>
+                                    <div class="d-flex jc-between mb-16">
+                                        <h3 class="font-20 roboto font-medium">2020 Valentine’s Special</h3>
+                                        <time class="font-medium">2020/02/14</time>
+                                    </div>
+                                    <p class="blog__article__text font-20 article-font-color font-normal">
+                                        一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                                        即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                                    </p>
+                                </div>
+                                <a class="blog__article__link font-color font-xl roboto font-black ta-end" href="">MORE</a>
+                            </div>
+                        </li>
+                        <li class="blog__card__item row mb-60">
+                            <div class="blog__card__photo col-6 col-sm-12"><img
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true"
+                                    alt="部落格封面照片2-街頭潮人訪問"></div>
+                            <div class="blog__article col-6 col-sm-12 d-flex fd-column jc-between">
+                                <div>
+                                    <a href="">
+                                        <h2 class="font-color font-xl">街頭潮人訪問</h2>
+                                    </a>
+                                    <div class="d-flex jc-between mb-16">
+                                        <h3 class="font-20 roboto font-medium">Street Interview</h3>
+                                        <time class="font-medium">2020/02/02</time>
+                                    </div>
+                                    <p class="blog__article__text font-20 article-font-color font-normal">炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
+                                        恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3
+                                        款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯
+                                    </p>
+                                </div>
+                                <a class="blog__article__link font-color font-xl roboto font-black ta-end" href="">MORE</a>
+                            </div>
+                        </li>
+                        <li class="blog__card__item row mb-60">
+                            <div class="blog__card__photo col-6 col-sm-12"><img
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true"
+                                    alt="部落格封面照片3-春季新品上市"></div>
+                            <div class="blog__article col-6 col-sm-12 d-flex fd-column jc-between">
+                                <div>
+                                    <a href="">
+                                        <h2 class="font-color font-xl">春季新品上市</h2>
+                                    </a>
+                                    <div class="d-flex jc-between mb-16">
+                                        <h3 class="font-20 roboto font-medium">New Selection</h3>
+                                        <time class="font-medium">2020/02/02</time>
+                                    </div>
+                                    <p class="blog__article__text font-20 article-font-color font-normal">2020
+                                        年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                    </p>
+                                </div>
+                                <a class="blog__article__link font-color font-xl roboto font-black ta-end" href="">MORE</a>
+                            </div>
+                        </li>
+                        <li class="blog__card__item row mb-60">
+                            <div class="blog__card__photo col-6 col-sm-12"><img
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true"
+                                    alt="部落格封面照片4-設計師獨享鏡框優惠"></div>
+                            <div class="blog__article col-6 col-sm-12 d-flex fd-column jc-between">
+                                <div>
+                                    <a href="">
+                                        <h2 class="font-color font-xl">設計師獨享鏡框優惠</h2>
+                                    </a>
+                                    <div class="d-flex jc-between mb-16">
+                                        <h3 class="font-20 roboto font-medium">Sales for Designer</h3>
+                                        <time class="font-medium">2020/01/18</time>
+                                    </div>
+                                    <p class="blog__article__text font-20 article-font-color font-normal">2020
+                                        年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                    </p>
+                                </div>
+                                <a class="blog__article__link font-color font-xl roboto font-black ta-end" href="">MORE</a>
+                            </div>
+                        </li>
+                        <li class="blog__card__item blog__card__lastItem  row mb-124">
+                            <div class="blog__card__photo col-6 col-sm-12"><img
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-5.png?raw=true"
+                                    alt="部落格封面照片5-抵抗夏日大作戰"></div>
+                            <div class="blog__article col-6 col-sm-12 d-flex fd-column jc-between">
+                                <div>
+                                    <a href="">
+                                        <h2 class="font-color font-xl">抵抗夏日大作戰</h2>
+                                    </a>
+                                    <div class="d-flex jc-between mb-16">
+                                        <h3 class="font-20 roboto font-medium">Summer Special</h3>
+                                        <time class="font-medium">2019/08/07</time>
+                                    </div>
+                                    <p class="blog__article__text font-20 article-font-color font-normal">2020
+                                        年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                    </p>
+                                </div>
+                                <a class="blog__article__link font-color font-xl roboto font-black ta-end" href="">MORE</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="pagination">
+    <ul class="d-flex jc-center">
+        <li><a class="pagination__link roboto pagination__link__upDown" href="#">上一頁</a></li>
+        <li><a class="pagination__link roboto" href="#">1</a></li>
+        <li><a class="pagination__link roboto pagination__link--active" href="#">2</a></li>
+        <li><a class="pagination__link roboto" href="#">3</a></li>
+        <li><a class="pagination__link roboto" href="#">4</a></li>
+        <li><a class="pagination__link roboto" href="#">5</a></li>
+        <li><a class="pagination__link roboto pagination__link__upDown pagination__link__down" href="#">下一頁</a></li>
+    </ul>
+</div>        </div>
+
+        <div class="footer bg-main pb-32">
+    <div class="container">
+        <div class="d-flex jc-between">
+            <div>
+                <nav class="footer__nav mb-40">
+                    <ul class="d-flex">
+                        <li><a class="white mr-48 footer__nav__link" href="index.html">首頁</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="product.html">系列鏡框</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="shop.html">門市據點</a></li>
+                        <li><a class="white mr-48 footer__nav__link" href="blog.html">部落格</a></li>
+                        <li><a class="white footer__nav__link" href="faq.html">常見問題</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <a class="footer__text white mb-8" href="tel:+">
+                        <span class="footer__icon material-symbols-outlined mr-20
+                            mr-20 pt-8">call</span>
+                        0800-000-000
+                    </a>
+                    <a class="footer__text white" href="mailto:">
+                        <span class="footer__icon material-symbols-outlined mr-20
+                            mr-20 pt-8">mail</span>
+                        glasses@business.com
+                    </a>
+                </div>
+            </div>
+            <div class="footer__sns">
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                        alt="facebook-LOGO">
+                </a>
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                        alt="instagram-LOGO">
+                </a>
+                <a class="footer__sns__link" href="#">
+                    <img class="footer__logo ml-32"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                        alt="line-LOGO">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__copyright d-flex jc-between pt-32-pb-32">
+            <p class="white">Copyright © 2020 Glasses.All rights reserved.</p>
+            <nav>
+                <ul class="footer__copyright__nav d-flex">
+                    <li class="footer__copyright__li"><a class="footer__copyright__link white" href="">隱私權政策</a></li>
+                    <li class="footer__copyright__li"><a class="footer__copyright__link white ml-48" href="">服務條款</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>            
+</body>
+
+</html>
