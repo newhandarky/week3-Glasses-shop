@@ -26,3 +26,10 @@
     color: $main-color;
     padding: 6px 0;
 }
+
+@mixin text-overflow-hidden{   
+    display: -webkit-box;
+    -webkit-line-clamp: 6;  // 設定行數
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

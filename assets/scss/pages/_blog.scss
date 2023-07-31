@@ -1,0 +1,112 @@
+.blog{
+    &__article__text{
+        @include text-overflow-hidden;
+    }
+    &__article__more__link{
+        display: none;
+    }
+
+}
+
+// rwd 1100
+@media (max-width: 1100px){
+    .blog{
+        &__article__text{
+            font-size: 18px;
+        }
+        &__card__item{
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+// rwd 992
+@media (max-width: 992px){
+    .blog{
+        h2{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+        &__card__item{
+            margin-bottom: 2.5rem;
+        }
+        &__article__text{
+            font-size: 16px;
+            -webkit-line-clamp: 5;
+        }
+        &__article__link{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// rwd 768
+@media (max-width: 768px){
+    .blog{
+        &__article__text{
+            font-size: 1rem;
+            -webkit-line-clamp: 5;
+        }
+        &__card__item{
+            margin-bottom: 1.5rem;
+        }
+        &__article__link{
+            display: none;
+        }
+    }
+}
+
+// rwd 696
+@media (max-width: 696px){
+    .blog{
+        &__article__text{
+            font-size: 1rem;
+            -webkit-line-clamp: 4;
+        }
+        time,
+        h3{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .blog{
+        &__article__text{
+            font-size: 1rem;
+            -webkit-line-clamp: 3;
+        }
+    }
+}
+
+// rwd 480
+@media (max-width: 480px){
+    .blog{
+        &__article__text{
+            font-size: 1rem;
+            -webkit-line-clamp: 1;
+        }
+    }
+}
+
+// rwd 375
+@media (max-width: 375px){
+    .blog{
+        &__article__text{
+            display: none;
+        }
+        time,
+        h3{
+            font-size: 1rem;
+        }
+        &__card__photo{
+            margin-bottom: 0.5rem;
+        }
+        &__card__lastItem{
+            margin-bottom: 3rem;
+        }
+    }
+}

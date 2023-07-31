@@ -28,6 +28,9 @@
 .ta-start{
     text-align: start;
 }
+.ta-end{
+    text-align: end;
+}
 
 // 樣式
 .btn{
@@ -62,6 +65,10 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+.font-20{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 .date-font {
     font-size: 0.875rem;
 }
@@ -74,8 +81,11 @@
 .font-light{
     font-weight: 300;
 }
-.font-weight{
+.font-medium{
     font-weight: 500;
+}
+.font-black{
+    font-weight: 900;
 }
 .font-normal{
     font-weight: normal;
@@ -86,7 +96,9 @@
 .dark-color {
     color: $dark-color;
 }
-
+.article-font-color{
+    color: $article-font-color;
+}
 .light-color {
     color: $light-color;
 }
@@ -224,11 +236,16 @@
 .mb-48{
     margin-bottom: 3rem;
 }
+.mb-60{
+    margin-bottom: 5rem;
+}
 .mb-72{
     margin-bottom: 4.5rem;
 }
 .mb-80{
     margin-bottom: 5rem;
 }
-
+.mb-124{
+    margin-bottom: 7.75rem;
+}
 
