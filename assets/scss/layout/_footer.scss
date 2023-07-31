@@ -64,15 +64,15 @@
             font-size: 1.25rem;
         }
         &__copyright{
-            text-align: center;
+            text-align: start;
             flex-direction: column;
             &__li{
                 margin-top: 0.5rem;
             }
             &__link{
                 display: block;
-                padding: 0.75rem 0;
                 margin-left: 0;
+                font-size: 1rem;
             }
             &__nav{
                 display: block
@@ -91,7 +91,15 @@
             margin-bottom: 0.25rem;
         }
         &__sns{
-            display: flex;
+            display: flex;            
+            flex-direction: column;
+        }
+        &__sns__link{
+            display: block;
+        }
+        &__icon{
+            font-size: 1.5rem;
+            margin-right: 1rem;
         }
     }
 }
@@ -103,6 +111,9 @@
         &__nav{
             display: none;
         }
+        &__sns{
+            flex-direction: row;
+        }
         &__icon{
             font-size: 1.25rem;
         }
@@ -113,9 +124,6 @@
             width: 1.5rem;
             height: 1.5rem;
             margin-left: 0.5rem;
-        }
-        &__copyright{
-            text-align: start;            
         }
     }
 }

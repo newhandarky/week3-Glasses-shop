@@ -52,7 +52,6 @@
 // 字體
 .font-xxl {
     font-size: 3rem;
-    font-weight: bold;
 }
 .font-42{
     font-size: 2.625rem;
@@ -63,11 +62,9 @@
 }
 .font-lg {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 .font-20{
     font-size: 1.25rem;
-    font-weight: bold;
 }
 .date-font {
     font-size: 0.875rem;
@@ -80,6 +77,9 @@
 }
 .font-light{
     font-weight: 300;
+}
+.font-bold{
+    font-weight: bold;
 }
 .font-medium{
     font-weight: 500;
@@ -157,14 +157,17 @@
     margin: 0 auto;
 }
 // top
-.pt-8{
-    // mta
+.mt-4{
+    margin-top: 0.25rem;
+}
+.mt-8{
+    margin-top: 0.5rem;
 }
 .mt-16{
     margin-top: 1rem;
 }
 .mt-24{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 .mt-40{
     margin-top: -2.5rem;
@@ -174,6 +177,9 @@
 }
 .mt-60{
     padding-top: 3.75rem;
+}
+.mt-100{
+    margin-top: 100px;
 }
 
 // right
@@ -189,6 +195,9 @@
 .mr-20{
     margin-right: 1.25rem;
 }
+.mr-24{
+    margin-right: 1.5rem;
+}
 .mr-48{
     margin-right: 48px;
 }
@@ -196,6 +205,9 @@
 // left
 .pl-12{
     padding-left: 0.875rem;
+}
+.ml-12{
+    margin-left: 0.75rem;
 }
 .ml-16{
     margin-left: 1rem;
@@ -218,6 +230,7 @@
 .mb-8{
     margin-bottom: 0.5rem;
 }
+
 .mb-16{
     margin-bottom: 1rem;
 }

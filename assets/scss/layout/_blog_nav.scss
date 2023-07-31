@@ -1,0 +1,44 @@
+.blog__nav{
+    background: $font-color;
+    padding: 0.75rem 0;
+    &__link{
+        &:hover{
+            background: $white;
+            color: $main-color;
+        }
+    }
+    span{
+        font-size: 30px;
+        display: block;
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .blog__nav{
+        &__link{
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+// rwd 450
+@media (max-width: 450px){
+    .blog__nav{
+        &__link{
+            span{
+                display: none;
+            }
+        }
+        &__box{
+            display: block;
+        }
+        &__links{
+            justify-content: space-between;
+        }
+        &__link{
+            margin-right: 0;
+        }
+    }
+}

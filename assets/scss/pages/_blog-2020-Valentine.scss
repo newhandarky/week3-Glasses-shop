@@ -1,0 +1,79 @@
+.valentine{
+    &__nav__span{
+        padding: 0 2px;
+    }
+    &__nav__link{
+        &:hover{
+            background: $main-color;
+            color: $white;
+        }
+    }
+    &__all__tags{
+        span{
+            display: inline-block;
+        }
+    }
+    &__tags__icon{
+        font-size: 36px;
+    }
+    &__sns__share__logo{
+        width: 24px;
+        height: 24px;
+        &:hover{
+            @include img-hover-zoom-in;
+        }
+    }
+
+    .blog__change__page{
+        span{
+            font-size: 16px;
+        }
+        &__link{
+            display: block;
+            &:hover{
+                background: $main-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+// rwd 576
+@media (max-width: 576px){
+    .valentine{
+        &__main{
+            max-width: 100%;
+            flex: 100%;
+        }
+        &__all__tags{
+            display: none;
+        }
+        &__sns__share{
+            display: none;
+        }
+    }
+    .blog__change__page{
+        display: none;
+    }
+}
+
+// rwd 375
+@media (max-width: 375px){
+    .valentine{
+        &__main{
+            &__tags{
+                span{
+                    font-size: 1rem;
+                }
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
