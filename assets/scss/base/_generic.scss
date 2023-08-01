@@ -1,93 +1,118 @@
-// 格式
-.fd-column{
+// flex
+.fd-column {
     flex-direction: column;
 }
+
 .d-flex {
     display: flex;
 }
 
 // 對齊
-.jc-center{
+.jc-center {
     justify-content: center;
 }
-.jc-end{
+
+.jc-end {
     justify-content: end;
 }
-.jc-between{
+
+.jc-between {
     justify-content: space-between;
 }
-.jc-around{
+
+.jc-around {
     justify-content: space-around;
 }
-.ai-center{
+
+.ai-center {
     align-items: center;
 }
-.ta-center{
+
+.ta-center {
     text-align: center;
 }
-.ta-start{
+
+.ta-start {
     text-align: start;
 }
-.ta-end{
+
+.ta-end {
     text-align: end;
 }
 
 // 樣式
-.btn{
+.btn {
     padding: 6px 12px;
     display: inline-block;
 }
-.btn-submit{
+
+.btn-submit {
     padding: 1rem 0;
     display: inline-block;
 }
-.color-block{
+
+.color-block {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 4px;
 }
 
+.hover-opacity {
+    &:hover {
+        opacity: 0.8;
+    }
+}
 
 
-// 字體
+
+// 字體-大小
 .font-xxl {
     font-size: 3rem;
 }
-.font-42{
+
+.font-42 {
     font-size: 2.625rem;
     font-weight: 500;
 }
-.font-xl{
+
+.font-xl {
     font-size: 2rem;
 }
+
 .font-lg {
     font-size: 1.5rem;
 }
-.font-20{
+
+.font-20 {
     font-size: 1.25rem;
 }
+
 .date-font {
     font-size: 0.875rem;
 }
-.italic{
+
+.italic {
     font-style: italic;
 }
-.roboto{
-    font-family: 'Roboto', sans-serif;
-}
-.font-light{
+
+// 字體-樣式
+.font-light {
     font-weight: 300;
 }
-.font-bold{
+
+.font-bold {
     font-weight: bold;
 }
-.font-medium{
+
+.font-medium {
     font-weight: 500;
 }
-.font-black{
+
+.font-black {
     font-weight: 900;
 }
-.font-normal{
+
+.font-normal {
     font-weight: normal;
 }
 
@@ -96,169 +121,163 @@
 .dark-color {
     color: $dark-color;
 }
-.article-font-color{
+
+.article-font-color {
     color: $article-font-color;
 }
+
 .light-color {
     color: $light-color;
 }
-.white{
+
+.white {
     color: $white;
 }
-.gray{
+
+.gray {
     color: $gray;
 }
+
 .main-color {
     color: $main-color;
 }
-.font-color{
+
+.font-color {
     color: $font-color;
 }
-.bg-dark{
+
+.bg-dark {
     background: $dark-color;
 }
-.bg-main{
+
+.bg-main {
     background: $main-color;
 }
-.bg-light{
+
+.bg-light {
     background: $light-color;
 }
-.bg-white{
+
+.bg-white {
     background: white;
 }
-.bg-dark-brown{
+
+// 顏色-背景
+.bg-dark-brown {
     background: $dark-brown;
 }
-.bg-light-brown{
+
+.bg-light-brown {
     background: $light-brown;
 }
 
-// 間距
-.block-padding{
-    padding: 5rem 0;
+// 間距-padding max-40
+@for $i from 1 through 10 {
+    .p-#{$i*4} {
+        padding: $i*4px;
+    }
 }
-.p-6-12{
-    padding: 6px 12px;
+
+// 間距-padding-x max-60
+@for $i from 1 through 15 {
+    .px-#{$i*4} {
+        padding-left: $i*4px;
+        padding-right: $i*4px;
+    }
 }
-.p-16{
-    padding: 1rem;
+
+// 間距-padding-y max100
+@for $i from 1 through 25 {
+    .py-#{$i*4} {
+        padding-top: $i*4px;
+        padding-bottom: $i*4px;
+    }
 }
-.pt-8_pb-8{
-    padding: 0.5rem 0;
+
+// 間距-padding-t max80
+@for $i from 1 through 20 {
+    .pt-#{$i*4} {
+        padding-top: $i*4px;
+    }
 }
-.mb-8-mb-16{
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+
+// 間距-padding-r max80
+@for $i from 1 through 20 {
+    .pr-#{$i*4} {
+        padding-right: $i*4px;
+    }
 }
-.pb-32{
-    padding: 2rem 0;
+
+// 間距-padding-b max80
+@for $i from 1 through 20 {
+    .pb-#{$i*4} {
+        padding-bottom: $i*4px;
+    }
 }
-.m0-a{
+
+// 間距-padding-l max80
+@for $i from 1 through 20 {
+    .pl-#{$i*4} {
+        padding-left: $i*4px;
+    }
+}
+
+// 間距-margin max40
+@for $i from 1 through 10 {
+    .m-#{$i*4} {
+        margin: $i*4px;
+    }
+}
+
+// 間距-margin-x max40
+@for $i from 1 through 10 {
+    .mx-#{$i*4} {
+        margin-left: $i*4px;
+        margin-right: $i*4px;
+    }
+}
+
+// 間距-margin-y max80
+@for $i from 1 through 20 {
+    .my-#{$i*4} {
+        margin-top: $i*4px;
+        margin-bottom: $i*4px;
+    }
+}
+
+// 間距-margin-t max100
+@for $i from 1 through 25 {
+    .mt-#{$i*4} {
+        margin-top: $i*4px;
+    }
+}
+
+// 間距-margin-r max80
+@for $i from 1 through 20 {
+    .mr-#{$i*4} {
+        margin-right: $i*4px;
+    }
+}
+
+// 間距-margin-b max160
+@for $i from 1 through 40 {
+    .mb-#{$i*4} {
+        margin-bottom: $i*4px;
+    }
+}
+
+// 間距-margin-l max80
+@for $i from 1 through 20 {
+    .ml-#{$i*4} {
+        margin-left: $i*4px;
+    }
+}
+
+.m-auto {
     margin: 0 auto;
 }
-// top
-.mt-4{
-    margin-top: 0.25rem;
-}
-.mt-8{
-    margin-top: 0.5rem;
-}
-.mt-16{
-    margin-top: 1rem;
-}
-.mt-24{
-    margin-top: 1.5rem;
-}
-.mt-40{
-    margin-top: -2.5rem;
-}
-.mt-48{
-    margin-top: 3rem;
-}
-.mt-60{
-    padding-top: 3.75rem;
-}
-.mt-100{
-    margin-top: 100px;
-}
 
-// right
-.mr-8{
-    margin-right: 0.5rem;
+// 間距-其他
+.p-6-12 {
+    padding: 6px 12px;
 }
-.mr-12{
-    margin-right: 0.75rem;
-}
-.mr-16{
-    margin-right: 1rem;
-}
-.mr-20{
-    margin-right: 1.25rem;
-}
-.mr-24{
-    margin-right: 1.5rem;
-}
-.mr-48{
-    margin-right: 48px;
-}
-
-// left
-.pl-12{
-    padding-left: 0.875rem;
-}
-.ml-12{
-    margin-left: 0.75rem;
-}
-.ml-16{
-    margin-left: 1rem;
-}
-.pl-16{
-    padding-left: 1rem;
-}
-.ml-32{
-    margin-left: 2rem;
-}
-.ml-48{
-    margin-left: 3rem;
-}
-.ml-64{
-    margin-left: 4rem;
-}
-
-
-// bottom
-.mb-8{
-    margin-bottom: 0.5rem;
-}
-
-.mb-16{
-    margin-bottom: 1rem;
-}
-.mb-20{
-    margin-bottom: 1.25rem;
-}
-.mb-24{
-    margin-bottom: 1.5rem;
-}
-.mb-32{
-    margin-bottom: 2rem;
-}
-.mb-40{
-    margin-bottom: 2.5rem;
-}
-.mb-48{
-    margin-bottom: 3rem;
-}
-.mb-60{
-    margin-bottom: 5rem;
-}
-.mb-72{
-    margin-bottom: 4.5rem;
-}
-.mb-80{
-    margin-bottom: 5rem;
-}
-.mb-124{
-    margin-bottom: 7.75rem;
-}
-

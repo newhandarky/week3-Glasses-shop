@@ -44,10 +44,6 @@
                 font-size: 16px;
             }
         }
-
-        &__local__map {
-            height: 350px;
-        }
     }
 }
 
@@ -80,24 +76,7 @@
                 font-size: 20px;
             }
         }
-
-        &__local__map {
-            height: 300px;
-        }
     }
 }
 
-// rwd 480
-@media (max-width: 480px) {
-    .shop__info__local__map {
-        height: 250px;
-    }
-}
-
-// rwd 375
-@media (max-width: 375px) {
-    .shop__info__local__map {
-        height: 208px;
-    }
-}
 
