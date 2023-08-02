@@ -93,6 +93,9 @@ body {
     &__input {
         display: block;
         width: 100%;
+        &:focus{
+            background: rgb(255, 255, 211);
+        }
     }
 
     &__checkbox {
