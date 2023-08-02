@@ -1,9 +1,12 @@
 .blog{
-    &__article__text{
-        @include text-overflow-hidden;
-    }
-    &__article__more__link{
-        display: none;
+    &__article{
+        position: relative;
+        &__text{
+            @include text-overflow-hidden;
+        }
+        &__more__link{
+            display: none;
+        }
     }
 
 }
@@ -34,7 +37,6 @@
         }
         &__article__text{
             font-size: 16px;
-            -webkit-line-clamp: 5;
         }
         &__article__link{
             font-size: 1.25rem;
@@ -45,29 +47,18 @@
 // rwd 768
 @media (max-width: 768px){
     .blog{
-        &__article__text{
-            font-size: 1rem;
-            -webkit-line-clamp: 5;
-        }
         &__card__item{
             margin-bottom: 1.5rem;
         }
         &__article__link{
             display: none;
         }
-    }
-}
-
-// rwd 696
-@media (max-width: 696px){
-    .blog{
-        &__article__text{
-            font-size: 1rem;
-            -webkit-line-clamp: 4;
-        }
-        time,
-        h3{
-            font-size: 0.75rem;
+        &__article__more__link{
+            position: absolute;
+            display: block;
+            right: 15px;
+            bottom: 0;
+            background: $white;
         }
     }
 }
@@ -77,17 +68,9 @@
     .blog{
         &__article__text{
             font-size: 1rem;
-            -webkit-line-clamp: 3;
         }
-    }
-}
-
-// rwd 480
-@media (max-width: 480px){
-    .blog{
-        &__article__text{
-            font-size: 1rem;
-            -webkit-line-clamp: 1;
+        &__article__more__link{
+            display: none;
         }
     }
 }

@@ -79,13 +79,16 @@ body{
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 576px){
     @for $i from 1 through $grid-num{
         .col-sm-#{$i}{
             max-width: (($i / $grid-num) * 100%);
             flex: 0 0 (($i / $grid-num) * 100%);
         }
     }
+}
+
+@media (max-width: 375px){
     .container{
         max-width: 345px;
     }
