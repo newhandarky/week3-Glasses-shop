@@ -5,7 +5,7 @@
 
     &__nav__link {
         &:hover {
-            background: $main-color;
+            background: $primary;
             color: $white;
         }
     }
@@ -38,7 +38,7 @@
             display: block;
 
             &:hover {
-                background: $main-color;
+                background: $primary;
                 color: $white;
             }
         }

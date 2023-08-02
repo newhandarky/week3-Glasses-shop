@@ -1,11 +1,11 @@
 .blog__nav {
-    background: $font-color;
+    background: $title-color;
     padding: 0.75rem 0;
 
     &__link {
         &:hover {
             background: $white;
-            color: $main-color;
+            color: $primary;
         }
 
         @include media-576 {

@@ -27,7 +27,7 @@ body {
         font-size: 1.25rem;
 
         &:hover {
-            color: $main-color;
+            color: $primary;
             background: $light-color;
         }
     }
@@ -86,7 +86,7 @@ body {
     }
 
     &__link:hover {
-        background: $main-color;
+        background: $primary;
         color: $white;
     }
 
