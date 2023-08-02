@@ -11,6 +11,26 @@
         }
     }
 
+    &__card__title{
+        display: inline-block;
+        h2{
+            &:hover{
+                background: $primary;
+                color: $white;
+                font-weight: 500;
+            }
+        }
+    }
+    &__article__link{
+        &:hover{
+            background: $primary;
+            color: $white;
+            &::before{
+                content: "SEE ";
+            }
+        }
+    }
+
     @include media-992 {
         h2 {
             font-size: 1.5rem;

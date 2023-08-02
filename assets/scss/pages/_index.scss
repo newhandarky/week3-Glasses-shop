@@ -25,10 +25,10 @@ body {
 
     &__btn {
         font-size: 1.25rem;
-
-        &:hover {
-            color: $primary;
-            background: $light-color;
+        @include btn-hover-focus;
+        &:hover::after{
+            content: " → 點我購買";
+            
         }
     }
 }
@@ -93,7 +93,8 @@ body {
     &__input {
         display: block;
         width: 100%;
-        &:focus{
+
+        &:focus {
             background: rgb(255, 255, 211);
         }
     }
@@ -105,10 +106,14 @@ body {
 
     &__textarea {
         resize: none;
+        @include scrollbar-change-color;        
     }
 
-    &__submit:hover {
-        cursor: pointer;
+    &__submit{
+        &:hover {
+            cursor: pointer;
+        }
+        @include btn-hover-focus;
     }
 }
 

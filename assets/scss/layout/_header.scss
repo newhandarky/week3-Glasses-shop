@@ -7,6 +7,9 @@
         width: 5rem;
         height: 3rem;
         background-size: cover;
+        &:hover{
+            @include img-hover-zoom-in;
+        }
     }
 
     &__nav {
