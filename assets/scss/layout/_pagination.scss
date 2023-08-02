@@ -1,5 +1,5 @@
-.pagination{
-    &__link{
+.pagination {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8,39 +8,42 @@
         border: 1px solid #555555;
         font-size: 18px;
         color: #555555;
-        &:hover{
+
+        &:hover {
             background: $main-color;
             color: $white;
         }
-        &--active{
+
+        &--active {
             background: $dark-color;
             color: $white;
-            &:hover{
+
+            &:hover {
                 background: $dark-color;
                 color: $white;
                 cursor: default;
             }
         }
+
+        @include media-576 {
+            font-size: 1rem;
+            width: 40px;
+            height: 48px;
+
+            &__upDown {
+                width: 75px;
+                height: 45px;
+            }
+        }
     }
-    &__link__upDown{
+
+    &__link__upDown {
         width: 81px;
         height: 48px;
         font-size: 19px;
     }
-    &__link__down{
-        background: #F2F2F2;
-    }
-}
 
-// rwd 576
-@media (max-width: 576px){
-    .pagination__link{
-        font-size: 1rem;
-        width: 40px;
-        height: 45px;
-        &__upDown{
-            width: 75px;
-            height: 45px;
-        }
+    &__link__down {
+        background: #F2F2F2;
     }
 }

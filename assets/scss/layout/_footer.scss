@@ -1,126 +1,140 @@
-.footer{
-    &__logo{
+.footer {
+    &__logo {
         width: 48px;
         height: 48px;
     }
-    &__nav__link:hover{
+
+    &__nav__link:hover {
         @include link-hover-padding;
     }
-    &__sns__link:hover{
-        .footer__logo{
+
+    &__sns__link:hover {
+        .footer__logo {
             @include img-hover-zoom-in;
         }
     }
-    &__text{
+
+    &__text {
         font-size: 2.25rem;
         display: block;
-        &:hover{
+
+        &:hover {
             background: $white;
             color: $main-color;
         }
     }
-    &__icon{
+
+    &__icon {
         font-size: 2.5rem;
         display: inline-block;
     }
-    hr{
+
+    hr {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    &__copyright__link{
-        &:hover{
+
+    &__copyright__link {
+        &:hover {
             @include link-hover-padding;
         }
     }
-            
 
-}
-@media (max-width: 768px){
-    .footer{
+    @include pad {
         padding-top: 3.75em;
         padding-bottom: 40px;
-        &__logo{
+
+        &__logo {
             width: 2.5rem;
             height: 2.5rem;
             margin-left: 16px;
         }
-        &__copyright{
+
+        &__copyright {
             font-size: 14px;
         }
     }
-}
 
-@media (max-width: 696px){
-    .footer{
-        &__nav a{
+    @include media-696 {
+        &__nav a {
             margin-right: 1.5rem;
         }
-        &__sns__link{
+
+        &__sns__link {
             display: block;
             margin-right: 0;
             margin-bottom: 1rem;
         }
-        &__text{
+
+        &__text {
             font-size: 1.25rem;
         }
-        &__copyright{
+
+        &__copyright {
             text-align: start;
             flex-direction: column;
-            &__li{
+
+            &__li {
                 margin-top: 0.5rem;
             }
-            &__link{
+
+            &__link {
                 display: block;
                 margin-left: 0;
                 font-size: 1rem;
             }
-            &__nav{
+
+            &__nav {
                 display: block
             }
         }
-        hr{
+
+        hr {
             margin: 1.25rem 0;
         }
     }
-}
 
-@media (max-width: 480px){
-    .footer{
-        &__nav ul{
+    @include media-480 {
+        &__nav ul {
             display: block;
             margin-bottom: 0.25rem;
         }
-        &__sns{
-            display: flex;            
+
+        &__sns {
+            display: flex;
             flex-direction: column;
         }
-        &__sns__link{
+
+        &__sns__link {
             display: block;
         }
-        &__icon{
+
+        &__icon {
             font-size: 1.5rem;
             margin-right: 1rem;
         }
     }
-}
 
-
-@media (max-width: 375px){
-    .footer{
+    @include mobile {
         padding: 1.5rem 0;
-        &__nav{
+
+        &__nav {
             display: none;
         }
-        &__sns{
+
+        &__sns {
             flex-direction: row;
         }
-        &__icon{
+
+        &__icon {
             font-size: 1.25rem;
         }
-        &__text{
+
+        &__text {
             font-size: 1rem;
         }
-        &__logo{
+
+        &__logo {
             width: 1.5rem;
             height: 1.5rem;
             margin-left: 0.5rem;

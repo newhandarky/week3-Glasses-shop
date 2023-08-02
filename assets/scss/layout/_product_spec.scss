@@ -1,23 +1,26 @@
-.product__spec{
-    &__nav{
+.product__spec {
+    &__nav {
         max-width: 100%;
-        li{
+
+        li {
             width: 33.333%;
             position: relative;
         }
     }
-    &__link{
+
+    &__link {
         display: block;
         border: 1px solid #DCDCDC;
         width: 100%;
-        padding: 1.5rem 0;        
-        &:hover{
+        padding: 1.5rem 0;
+
+        &:hover {
             color: $white;
             background: lighten($main-color, 40%);
         }
     }
 
-    .active{
+    .active {
         position: absolute;
         display: none;
         display: inline-block;
@@ -27,34 +30,22 @@
         left: 0;
         bottom: 0;
     }
-}
 
-// rwd 768
-@media (max-width: 768px){
-    .product__spec{
+    @include pad {
         max-width: 100%;
         padding: 0;
     }
-}
 
-// rwd 696
-@media (max-width: 696px){
-    .product__spec{
-        &__link{
+    @include media-696 {
+        &__link {
             font-size: 1.5rem;
+            font-weight: 500;
         }
     }
-    .product__spec__link{
-        font-weight: 500;
-    }
-}
 
-// rwd 576
-@media (max-width: 576px){
-    .product__spec{
-        &__link{
+    @include media-576 {
+        &__link {
             font-size: 1rem;
         }
     }
 }
-

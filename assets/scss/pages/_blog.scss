@@ -1,59 +1,48 @@
-.blog{
-    &__article{
+.blog {
+    &__article {
         position: relative;
-        &__text{
+
+        &__text {
             @include text-overflow-hidden;
         }
-        &__more__link{
+
+        &__more__link {
             display: none;
         }
     }
 
-}
-
-// rwd 1100
-@media (max-width: 1100px){
-    .blog{
-        &__article__text{
-            font-size: 18px;
-        }
-        &__card__item{
-            margin-bottom: 3rem;
-        }
-    }
-}
-
-// rwd 992
-@media (max-width: 992px){
-    .blog{
-        h2{
+    @include media-992 {
+        h2 {
             font-size: 1.5rem;
         }
-        h3{
+
+        h3 {
             font-size: 1rem;
         }
-        &__card__item{
+
+        &__card__item {
             margin-bottom: 2.5rem;
         }
-        &__article__text{
+
+        &__article__text {
             font-size: 16px;
         }
-        &__article__link{
+
+        &__article__link {
             font-size: 1.25rem;
         }
     }
-}
 
-// rwd 768
-@media (max-width: 768px){
-    .blog{
-        &__card__item{
+    @include pad {
+        &__card__item {
             margin-bottom: 1.5rem;
         }
-        &__article__link{
+
+        &__article__link {
             display: none;
         }
-        &__article__more__link{
+
+        &__article__more__link {
             position: absolute;
             display: block;
             right: 15px;
@@ -61,34 +50,32 @@
             background: $white;
         }
     }
-}
 
-// rwd 576
-@media (max-width: 576px){
-    .blog{
-        &__article__text{
+    @include media-576 {
+        &__article__text {
             font-size: 1rem;
         }
-        &__article__more__link{
+
+        &__article__more__link {
             display: none;
         }
     }
-}
 
-// rwd 375
-@media (max-width: 375px){
-    .blog{
-        &__article__text{
+    @include mobile {
+        &__article__text {
             display: none;
         }
+
         time,
-        h3{
+        h3 {
             font-size: 1rem;
         }
-        &__card__photo{
+
+        &__card__photo {
             margin-bottom: 0.5rem;
         }
-        &__card__lastItem{
+
+        &__card__lastItem {
             margin-bottom: 3rem;
         }
     }

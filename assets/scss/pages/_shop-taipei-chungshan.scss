@@ -28,55 +28,47 @@
         &__local__map {
             height: 414px;
         }
-    }
-}
 
+        @include media-696 {
+            &__text {
+                h2 {
+                    font-size: 20px;
+                }
 
-// rwd 696
-@media (max-width: 696px) {
-    .shop__info {
-        &__text {
-            h2 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 16px;
+                p {
+                    font-size: 16px;
+                }
             }
         }
-    }
-}
 
-// rwd 576
-@media (max-width: 576px) {
-    .shop__info {
-        &__card {
-            display: block;
-        }
-        
-        &--rwd {
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-
-            img {
+        @include media-576 {
+            &__card {
                 display: block;
             }
-        }
-        &__photo{
-            margin-bottom: 0;
-        }
 
-        &__text {
-            h2 {
-                font-size: 24px;
+            &--rwd {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+                img {
+                    display: block;
+                }
             }
 
-            p {
-                font-size: 20px;
+            &__photo {
+                margin-bottom: 0;
+            }
+
+            &__text {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
             }
         }
     }
 }
-
-

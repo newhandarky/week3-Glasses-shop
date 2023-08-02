@@ -1,35 +1,71 @@
-@mixin img-hide-text{
+@mixin img-hide-text {
     text-indent: 150%;
     overflow: hidden;
     white-space: nowrap;
 }
 
-@mixin img-hover-zoom-in{
+@mixin img-hover-zoom-in {
     transition: all 0.5s ease-out;
-    transform:scale(1.4,1.4);
+    transform: scale(1.4, 1.4);
 }
 
-@mixin bg-img-cover{
+@mixin bg-img-cover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-@mixin box-shadow{
+@mixin box-shadow {
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
 }
 
-@mixin link-hover-padding{
+@mixin link-hover-padding {
     background: $white;
     color: $main-color;
     padding: 6px 0;
 }
 
-@mixin text-overflow-hidden{   
+@mixin text-overflow-hidden {
     display: -webkit-box;
-    -webkit-line-clamp: 6;  // 設定行數
-    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 6; // 設定行數
+    -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@mixin media-992 {
+    @media(max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-696 {
+    @media(max-width: 696px) {
+        @content;
+    }
+}
+
+@mixin media-576 {
+    @media(max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-480 {
+    @media(max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width: 375px) {
+        @content;
+    }
 }
