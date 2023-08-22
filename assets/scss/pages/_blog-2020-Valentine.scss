@@ -4,6 +4,15 @@
     }
 
     &__nav__link {
+        color: black;        
+        &:hover{
+            background: $primary;
+            color: $white;
+        }
+    }  
+
+    .active{
+        color: $primary;
         &:hover {
             background: $primary;
             color: $white;
@@ -18,6 +27,10 @@
 
     &__tags__icon {
         font-size: 36px;
+    }
+    &__tags__link:hover{
+        background: $primary;
+        color: $white;
     }
 
     &__sns__share__logo {
